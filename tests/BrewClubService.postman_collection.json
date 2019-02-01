@@ -1,0 +1,33 @@
+{
+	"info": {
+		"_postman_id": "c39a830b-2870-4cd7-8360-4d75d827da6b",
+		"name": "BrewClubService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "NewsItem.GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44313/api/newsitem",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44313",
+					"path": [
+						"api",
+						"newsitem"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

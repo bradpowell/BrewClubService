@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace Brad.BrewClub.Services.Models
+{
+    public class NewsItem
+    {
+        public int Id { get; set; }
+        public DateTime DateCreated { get; set; }
+        public DateTime? DateModified { get; set; }
+        public string Title { get; set; }
+        public string Body { get; set; }
+    }
+}
