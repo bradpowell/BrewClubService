@@ -4,7 +4,6 @@ pool:
 variables:
   BuildConfiguration: 'Release'
   DockerImageName: '[PROJECT-NAME]/brewclubservice'
-  buildConfiguration: 'Release'
 
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
