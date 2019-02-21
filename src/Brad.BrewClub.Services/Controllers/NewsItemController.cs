@@ -21,6 +21,19 @@ namespace Brad.BrewClub.Services.Controllers
         {
             this.brewClubDbContext = brewClubDbContext;
             this.dataModelMapper = dataModelMapper;
+
+            //TODO: Remove this dummy data  
+            if (this.brewClubDbContext.NewsItems.Count() == 0)
+            {
+                this.brewClubDbContext.NewsItems.Add(new NewsItemData
+                {
+                    Body = "Dummy body",
+                    Id = 22,
+                    Title = "Dummy title"
+                });
+
+                this.brewClubDbContext.SaveChanges();
+            }
         }
 
         // GET api/newsitem
